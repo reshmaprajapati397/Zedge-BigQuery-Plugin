@@ -1,0 +1,107 @@
+body #bigquery-wrapper.bigquery {
+  .tl-parents {
+    .parent {
+      .ifb-header {
+        margin-bottom: 0;
+
+        .mt-name {
+          .zr {
+            .zc-auto {
+              @include sm {
+                order: -1 !important;
+                margin-bottom: $gap;
+              }
+            }
+          }
+        }
+      }
+
+      &-stats {
+        padding: 0 $gap;
+
+        > .zr {
+          align-items: center;
+          flex-wrap: nowrap;
+
+          @include md {
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            padding: $box-padding 0;
+
+            .mt-parents,
+            .mt-group-eba-ba-dp-var-z {
+              flex: 0 0 auto;
+              margin-top: $gap !important;
+            }
+
+            .mt-group-eba-ba-dp-var-z {
+              width: 100%;
+            }
+          }
+
+          @include sm {
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            padding: $box-padding 0;
+
+            .mt-parents,
+            .mt-group-eba-ba-dp-var-z {
+              flex: 0 0 auto;
+              margin-top: $gap !important;
+            }
+
+            .mt-group-eba-ba-dp-var-z {
+              width: 100%;
+            }
+          }
+        }
+
+        label {
+          display: none;
+        }
+
+        .mt-group {
+          justify-content: center;
+
+          .zr {
+            flex-wrap: nowrap;
+          }
+        }
+      }
+
+      .ifb-footer {
+        border-top: 1px solid $color-border;
+        padding: $gap;
+
+        @include sm {
+          padding-bottom: $gap !important;
+        }
+      }
+    }
+  }
+
+  .parent {
+    &-type {
+      display: inline-block;
+      padding: 0.5 * $gap $gap;
+      @include border-radius(50px);
+      color: $color-light;
+      font-size: 0.8 * $font-size;
+      line-height: 1;
+
+      i {
+        color: $color-light;
+      }
+
+      &.sire {
+        background-color: $color-male;
+      }
+
+      &.dam {
+        background-color: $color-female;
+      }
+    }
+  }
+}

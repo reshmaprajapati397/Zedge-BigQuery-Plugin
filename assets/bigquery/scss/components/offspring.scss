@@ -1,0 +1,67 @@
+body #bigquery-wrapper.bigquery {
+  .tl-offspring {
+    .ifb {
+      padding-left: $gap;
+
+      @include sm {
+        padding: $gap;
+      }
+
+      .offspring-data {
+        > .zr {
+          @include sm {
+            border: 0 !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            text-align: center;
+
+            > * {
+              flex: 0 0 auto !important;
+              width: 100% !important;
+              margin-bottom: $gap;
+              text-align: center !important;
+
+              .zr {
+                justify-content: center !important;
+                text-align: center;
+              }
+            }
+
+            .mt {
+              text-align: center !important;
+              margin-bottom: $gap;
+              min-width: 5 * $gap;
+
+              &-name {
+                a {
+                  font-size: 1.5 * $font-size;
+                }
+              }
+
+              &-group-races-win {
+                justify-content: center !important;
+
+                .mt {
+                  width: auto;
+                }
+              }
+
+              &-group-eba-ba-dp-var-z,
+              &-parents {
+                width: auto !important;
+                justify-content: center !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                min-width: 5 * $box-padding;
+              }
+
+              &-price {
+                margin-top: $gap;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

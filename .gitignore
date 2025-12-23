@@ -1,0 +1,10 @@
+# Secrets / Credentials
+# =========================
+composer.json
+composer.lock
+skbloodstock-34da2c174c49.json
+
+# =========================
+# Composer
+# =========================
+/vendor/ 

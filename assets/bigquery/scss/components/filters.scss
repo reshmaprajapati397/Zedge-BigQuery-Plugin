@@ -1,0 +1,101 @@
+body #bigquery-wrapper.bigquery {
+  .bigquery-filters {
+    margin-bottom: $box-padding;
+
+    &-actions {
+      background: $color-foreground;
+      margin: $box-padding auto $gap auto;
+    }
+  }
+  .bottom-filters {
+    padding-top: $gap;
+    padding-bottom: $box-padding;
+    display: none !important;
+    position: relative;
+
+    &-content {
+      max-height: 30 * $box-padding;
+      overflow-y: scroll;
+      position: relative;
+      padding-bottom: $box-padding;
+      padding-top: $box-padding;
+    }
+
+    &.active {
+      display: block !important;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin: auto;
+      height: 2 * $box-padding;
+      z-index: 9;
+    }
+
+    &:before {
+      top: $gap;
+      background: rgb(255, 255, 255);
+      background: -moz-linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(26, 27, 27, 1) 100%);
+      background: -webkit-linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(26, 27, 27, 1) 100%);
+      background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(26, 27, 27, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#1a1b1b",GradientType=1);
+    }
+
+    &:after {
+      bottom: 1 * $box-padding;
+      background: rgb(255, 255, 255);
+      background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(26, 27, 27, 1) 100%);
+      background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(26, 27, 27, 1) 100%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(26, 27, 27, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#1a1b1b",GradientType=1);
+    }
+  }
+
+  .zform {
+    .filter-group-section {
+      margin-bottom: $box-padding;
+      border: 1px solid $color-border;
+      @include border-radius($border-radius);
+
+      .filter-header {
+        margin-bottom: 0;
+        padding: $gap $box-padding;
+        background-color: darken($color-foreground, 5%);
+        border-bottom: 1px solid $color-border;
+
+        &-title {
+          margin: 0;
+          @include transition(0.15s all ease-in-out 0s);
+        }
+      }
+
+      .filter-content-area {
+        background-color: $color-foreground;
+        padding: $box-padding;
+
+        .zr {
+          .zc-6 {
+            @include sm {
+              flex: 0 0 auto;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        .filter-header {
+          &-title {
+            color: $color-link;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+// Base Font Sizes:
+$base-font-size: 16px !default;
+
+$base-font-size-xxl: $base-font-size * 1 !default;
+$base-font-size-xl: $base-font-size * 1 !default;
+$base-font-size-lg: $base-font-size * 0.9 !default;
+$base-font-size-md: $base-font-size * 0.85 !default;
+$base-font-size-sm: $base-font-size * 0.8 !default;
+$base-font-size-xs: $base-font-size * 0.75 !default;
+
+// Variables Declartion: //
+$gap: pxToRem(10px) !default;
+$box-padding: $gap * 2 !default;
+
+$font-size: pxToRem(14px) !default;
+$font-size-small: 0.8 * $font-size;
+$border-radius: 0.3 * $gap !default;
+
+// Borders: //
+$border-width: 1px;
+
+// Tables, rows and cells //
+$cell-total-width: 100%;
+$cell-min-width: 7 * $gap;
+$cell-title-width: 25%;
+$mt-zbtn: 2.5 * $gap;
+$mt-zbtn-large: 5 * $gap;
+$cell-grouped-outer-width: 3 * $mt-zbtn-large;
+
+// Icons: //
+$fa-font-path: "../webfonts";
+
+// Color declaration: //
+$color-main: #403f86 !default;
+$color-link: #7f7dff !default;
+$color-text: #cfc9bf !default;
+$color-light: #ffffff !default;
+$color-dark: #000000 !default;
+$color-foreground: #121313 !default;
+$color-background: #282828 !default;
+$color-positive: #378d63 !default;
+$color-negative: #953636 !default;
+$color-medium: #868b3f !default;
+$color-danger: #b5733e !default;
+$color-border: lighten($color-background, 10%);
+$color-blue: #0b45ee !default;
+$color-pink: #fc5f9c !default;
+$color-male: $color-blue;
+$color-female: $color-pink;
+
+// Conditonal Formatting colors: //
+$color-traits-0: #bf360c;
+$color-traits-10: #e64a19;
+$color-traits-20: #f57c00;
+$color-traits-30: #ff9800;
+$color-traits-40: #ffc107;
+$color-traits-50: #eec510;
+$color-traits-60: #cddc39;
+$color-traits-70: #8bc34a;
+$color-traits-80: #7cb342;
+$color-traits-90: #689f38;
+
+// Charts: //
+$chart-min-height: 10 * $box-padding;
+
+// Forms and Buttons: //
+$form-field-height: 3.6 * $gap;
+
+// Media Aliases and Style Breakpoints:
+$screen-sm-min: 320px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+$screen-xxl-min: 1400px;
+
+$screen-xs-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
+$screen-xl-max: 1399px;
+$screen-xxl-max: 5000px;

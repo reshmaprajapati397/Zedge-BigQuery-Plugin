@@ -1,0 +1,89 @@
+body #bigquery-wrapper.bigquery {
+  .ifb {
+    position: relative;
+    margin-bottom: $gap;
+    background-color: $color-background;
+    border: 1px solid $color-border;
+    font-size: $font-size;
+    @include border-radius($border-radius);
+    @include box-shadow(0 0 0 0.3 * $gap rgba(0, 0, 0, 0.14));
+    overflow: clip;
+    height: 100%;
+
+    @include md {
+      margin-bottom: $box-padding;
+      height: auto;
+    }
+
+    @include sm {
+      margin-bottom: $box-padding;
+      height: auto;
+    }
+
+    .zr {
+      align-items: center !important;
+    }
+
+    &-vl {
+      font-weight: bold;
+      color: $color-light;
+    }
+
+    &-header {
+      border-bottom: 1px solid $color-border;
+      background-color: darken($color-background, 2.5%);
+      text-align: center;
+      margin-bottom: $gap;
+      padding: $gap;
+
+      &-sub {
+        margin-top: $gap;
+      }
+
+      &-title {
+        color: $color-light;
+      }
+    }
+
+    &-body {
+      padding: 0.5 * $gap $gap;
+    }
+
+    &-footer {
+      padding: 0.5 * $gap;
+    }
+
+    &-stat {
+      position: relative;
+      @extend .zr;
+      align-items: center;
+      margin-bottom: 0.5 * $gap;
+
+      .ifb-lbl,
+      .ifb-vl {
+        display: block;
+        @extend .zc;
+      }
+
+      &.inline-stat {
+        display: inline-flex;
+        margin-left: 0.5 * $gap;
+        margin-right: 0.5 * $gap;
+
+        > .ifb-lbl,
+        > .ifb-vl {
+          padding-left: 0;
+          padding-right: 0.25 * $gap;
+        }
+      }
+    }
+
+    h5 {
+      color: $color-light;
+    }
+  }
+
+  .parent-header {
+    margin-bottom: $gap;
+  }
+}

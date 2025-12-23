@@ -1,0 +1,160 @@
+// Color styles of mt's //
+.mt-vl-100-plus {
+  background-color: $color-traits-90 !important;
+}
+
+.mt-vl-100 {
+  background-color: $color-traits-90 !important;
+}
+
+.mt-vl-90 {
+  background-color: $color-traits-90 !important;
+}
+
+.mt-vl-80 {
+  background-color: $color-traits-80 !important;
+}
+
+.mt-vl-70 {
+  background-color: $color-traits-70 !important;
+}
+
+.mt-vl-60 {
+  background-color: $color-traits-60 !important;
+}
+
+.mt-vl-50 {
+  background-color: $color-traits-50 !important;
+}
+
+.mt-vl-40 {
+  background-color: $color-traits-40 !important;
+}
+
+.mt-vl-30 {
+  background-color: $color-traits-30 !important;
+}
+
+.mt-vl-20 {
+  background-color: $color-traits-20 !important;
+}
+
+.mt-vl-10 {
+  background-color: $color-traits-10 !important;
+}
+
+.mt-vl-0 {
+  background-color: $color-traits-0 !important;
+}
+
+.mt-vl-empty {
+  background-color: $color-background !important;
+}
+
+// Texts: //
+.text-mt-vl-primary {
+  color: $color-main !important;
+}
+
+.text-mt-vl-100-plus {
+  color: $color-traits-90 !important;
+}
+
+.text-mt-vl-100 {
+  color: $color-traits-90 !important;
+}
+
+.text-mt-vl-90 {
+  color: $color-traits-90 !important;
+}
+
+.text-mt-vl-80 {
+  color: $color-traits-80 !important;
+}
+
+.text-mt-vl-70 {
+  color: $color-traits-70 !important;
+}
+
+.text-mt-vl-60 {
+  color: $color-traits-60 !important;
+}
+
+.text-mt-vl-50 {
+  color: $color-traits-50 !important;
+}
+
+.text-mt-vl-40 {
+  color: $color-traits-40 !important;
+}
+
+.text-mt-vl-30 {
+  color: $color-traits-30 !important;
+}
+
+.text-mt-vl-20 {
+  color: $color-traits-20 !important;
+}
+
+.text-mt-vl-10 {
+  color: $color-traits-10 !important;
+}
+
+.text-mt-vl-0 {
+  color: $color-traits-0 !important;
+}
+
+.text-mt-vl-primary {
+  color: $color-main !important;
+}
+
+// BA/DP Race: //
+.trait-badp-0 {
+  color: $color-traits-10 !important;
+}
+.trait-badp-10 {
+  color: $color-traits-30 !important;
+}
+.trait-badp-25 {
+  color: $color-traits-50 !important;
+}
+.trait-badp-50 {
+  color: $color-traits-80 !important;
+}
+
+// VAR Race: //
+.trait-var-0 {
+  color: $color-traits-10 !important;
+}
+.trait-var-25 {
+  color: $color-traits-30 !important;
+}
+.trait-var-50 {
+  color: $color-traits-50 !important;
+}
+.trait-var-100 {
+  color: $color-traits-80 !important;
+}
+
+// Offspring: //
+.trait-os-0 {
+  color: $color-traits-10 !important;
+}
+.trait-os-2 {
+  color: $color-traits-30 !important;
+}
+.trait-os-5 {
+  color: $color-traits-50 !important;
+}
+.trait-os-10 {
+  color: $color-traits-80 !important;
+}
+
+// Additional Text Metrics styling //
+.tm-v-n {
+  @extend .trait-var-0;
+}
+
+.tm-v-p {
+  @extend .trait-var-100;
+}

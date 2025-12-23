@@ -1,0 +1,130 @@
+body #bigquery-wrapper.bigquery {
+  .mt {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    strong {
+      //color: $color-light;
+    }
+
+    label {
+      font-size: $font-size-small;
+      font-weight: bold;
+      text-transform: none;
+    }
+
+    .value:not(.text-small .value):not(a) {
+      color: $color-light;
+    }
+
+    &-name {
+      text-align: left;
+      font-size: $font-size;
+
+      a {
+        font-weight: bold;
+        color: $color-link;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:visited {
+          color: $color-main;
+        }
+      }
+    }
+
+    // Parents //
+    &-parents {
+      display: block !important;
+      margin: auto !important;
+      .zr {
+        align-items: center !important;
+
+        > * {
+          padding: 0 !important;
+        }
+      }
+    }
+
+    &-price {
+      min-width: 5 * $box-padding;
+
+      @include md {
+        flex: 0 0 auto !important;
+
+        .mt-lbl {
+          display: none;
+        }
+      }
+    }
+
+    &-action {
+      text-overflow: clip;
+      flex: 0 0 auto !important;
+      text-align: right;
+    }
+
+    &-price,
+    &-action {
+      @include md {
+        margin: $gap 0;
+      }
+    }
+
+    .icon-mt {
+      span,
+      i {
+        font-style: normal;
+        color: $color-text;
+      }
+    }
+
+    &-values-grouped {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    // Races / win //
+    &-group-races-win {
+      > .mt {
+        width: 7 * $gap;
+      }
+    }
+
+    // EBA / BA / DP / VAR / ZEDGE  //
+    &-group-eba-ba-dp-var-z {
+      margin-left: 0.5 * $gap !important;
+      margin-right: 0.5 * $gap !important;
+
+      > .mt {
+        width: 5 * $gap;
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .mt-group {
+    //width: $cell-grouped-outer-width;
+    margin: 0;
+
+    > .mt {
+      min-width: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .offspring-data {
+    .mt-level, .mt-evo, .mt-designation, .mt-eba {
+      min-width: 4*$gap;
+    }
+
+    .mt-races, .mt-win{
+      min-width: 7*$gap;
+    }
+  }
+}

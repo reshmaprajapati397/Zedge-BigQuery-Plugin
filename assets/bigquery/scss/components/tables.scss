@@ -1,0 +1,202 @@
+body #bigquery-wrapper.bigquery {
+  .hrs {
+    position: relative;
+
+    &-table {
+      color: $color-text;
+      position: relative;
+      background: $color-foreground;
+      display: block;
+      overflow: clip;
+      border: $border-width solid rgba($color: $color-dark, $alpha: 0.28);
+      margin-left: -$box-padding;
+      margin-right: -$box-padding;
+
+      @include sm {
+        padding: 0;
+        border: 0;
+      }
+
+      &-body,
+      &-head {
+        .hr {
+          position: relative;
+          overflow-x: hidden;
+
+          &-outer,
+          &-headings {
+            @extend .zr;
+            font-size: $font-size;
+            align-items: center !important;
+            flex-wrap: nowrap;
+
+            &.zr,
+            .zr {
+              flex-wrap: nowrap;
+            }
+
+            .mt {
+              &-id {
+                width: 6%;
+              }
+
+              &-name {
+                width: 23%;
+              }
+            }
+            .mt-group {
+              > * {
+                padding: 0 !important;
+              }
+            }
+          }
+
+          .mt-group {
+            @extend .zr;
+            align-items: center !important;
+          }
+
+          &-headings {
+            padding: $gap;
+
+            @include sm {
+              display: none !important;
+            }
+          }
+
+          &-inner {
+            padding: $box-padding;
+            background-color: $color-foreground;
+
+            @include lg {
+              padding: $box-padding;
+            }
+          }
+
+          &-outer {
+            padding-left: $gap;
+            padding-right: $gap;
+
+            @include md {
+              flex-wrap: wrap !important;
+              justify-content: center !important;
+            }
+
+            &.zr {
+              position: relative;
+              border-bottom: $border-width solid $color-border;
+              background-color: $color-background;
+              @include transition(0.15s all ease-in 0s);
+              flex-wrap: nowrap;
+              align-items: center !important;
+            }
+          }
+
+          .mt-parents.mt-group {
+            margin: 0 * $gap 0;
+            flex-wrap: wrap;
+
+            .zbtn-mt {
+              @include border-radius(0);
+            }
+
+            .icon-mt {
+              display: inline-block;
+              vertical-align: middle;
+              min-width: 1.6 * $gap;
+
+              i {
+                font-size: $font-size;
+                margin-right: 0.25 * $gap;
+                font-style: normal;
+              }
+            }
+            .mt-parent-father {
+              .icon-mt i {
+                color: $color-male;
+              }
+            }
+            .mt-parent-mother {
+              .icon-mt i {
+                color: $color-female;
+              }
+            }
+          }
+        }
+      }
+
+      &-body {
+        @include sm {
+          padding: 0 $box-padding;
+          .hr {
+            padding: $gap;
+            background-color: $color-background;
+            border: 1px solid $color-border;
+            font-size: $font-size;
+            @include border-radius($border-radius);
+            @include box-shadow(0 0 0 0.3 * $gap rgba(0, 0, 0, 0.14));
+            margin-top: $box-padding;
+
+            &-outer {
+              border: 0 !important;
+              flex-wrap: wrap !important;
+              justify-content: center !important;
+              text-align: center;
+
+              > * {
+                flex: 0 0 auto !important;
+                width: 100% !important;
+                margin-bottom: $gap;
+                text-align: center !important;
+              }
+
+              .mt {
+                &-name {
+                  a {
+                    font-size: 1.5 * $font-size;
+                  }
+                }
+
+                &-group-races-win {
+                  justify-content: center !important;
+
+                  .mt {
+                    width: auto;
+                    padding: 0 $gap !important;
+                  }
+                }
+
+                &-group-eba-ba-dp-var-z,
+                &-parents {
+                  width: auto !important;
+                  justify-content: center !important;
+                  margin-left: 0 !important;
+                  margin-right: 0 !important;
+                }
+
+                &-price {
+                  margin-top: $gap;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-head {
+        .hr {
+          &-headings {
+            color: $color-light;
+            font-size: $font-size;
+            background-color: darken($color-foreground, 5%) !important;
+
+            .mt-lbl {
+              font-weight: bold;
+              font-size: $font-size;
+            }
+          }
+        }
+      }
+    }
+  }
+}

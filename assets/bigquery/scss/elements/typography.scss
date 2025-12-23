@@ -1,0 +1,73 @@
+body #bigquery-wrapper.bigquery {
+  strong {
+    font-weight: bold;
+  }
+
+  .text-muted {
+    color: $color-text;
+  }
+
+  .text-left {
+    text-align: left !important;
+  }
+
+  .text-right {
+    text-align: right !important;
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  .text-light {
+    color: $color-light;
+  }
+
+  .text-small {
+    font-size: $font-size-small;
+  }
+
+  .w-auto {
+    width: auto !important;
+  }
+
+  h1,
+  .h1 {
+    font-size: 3 * $font-size;
+    margin-bottom: 2 * $gap;
+  }
+  h2,
+  .h2 {
+    font-size: 2.5 * $font-size;
+    margin-bottom: 2 * $gap;
+  }
+  h3,
+  .h3 {
+    font-size: 2 * $font-size;
+    margin-bottom: 1.5 * $gap;
+  }
+  h4,
+  .h4 {
+    font-size: 1.5 * $font-size;
+    margin-bottom: 1.5 * $gap;
+  }
+  h5,
+  .h5 {
+    font-size: 1.25 * $font-size;
+    margin-bottom: $gap;
+  }
+  h6,
+  .h6 {
+    font-size: 1 * $font-size;
+    font-weight: bold;
+    margin-bottom: $gap;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-light;
+  }
+}

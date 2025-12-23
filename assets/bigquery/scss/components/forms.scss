@@ -1,0 +1,142 @@
+body #bigquery-wrapper.bigquery {
+  .zform {
+    position: relative;
+    margin-bottom: $box-padding;
+    color: $color-light;
+
+    .zform-label,
+    label {
+      color: $color-light;
+      text-transform: none;
+      font-weight: bold;
+      margin-bottom: 0.5 * $gap;
+    }
+
+    .zff {
+      color: $color-light;
+      background-color: $color-background;
+      border: 1px solid $color-border;
+      @include box-shadow(2px 2px 6px rgba(0, 0, 0, 0.28));
+      font-size: 0.9 * $font-size;
+      font-weight: bold;
+      height: $form-field-height;
+      transition: none !important;
+      margin-bottom: $gap;
+
+      &:focus {
+        border-color: $color-main !important;
+        @include box-shadow(1px 1px 1px 0 $color-main);
+      }
+
+      &.if,
+      .it {
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+      }
+
+      &.if {
+        max-width: 5 * $box-padding;
+      }
+
+      &.if-plus {
+        max-width: 7.5 * $box-padding;
+      }
+
+      &.select-multiple {
+        min-height: 5 * $box-padding;
+      }
+    }
+
+    .zff-stb{
+      position: relative;
+
+      &-search{
+        position: relative;
+      }
+
+      &-loader{
+        width: $gap * 3;
+        height: $gap * 3;
+        position: absolute;
+        right: 0.5*$gap;
+        top: 0.25*$gap;
+        bottom: 0;
+        z-index: 9;
+        background: url(../images/loader.gif) no-repeat center center/100%;
+        display: none;
+      }
+
+      &-content {
+        display: none;
+        background: $color-background;
+        border: 1px solid $color-border;
+        @include border-radius(0 0 $border-radius $border-radius);
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 100%;
+        margin-top: -$gap;
+        padding: $gap 0;
+        max-height: 15*$box-padding;
+        overflow: auto;
+        z-index: 99;
+        min-height: 7*$box-padding;
+
+        ul, .stb-list {
+          display: block;
+          width: 100%;
+
+          li, .stb-list-item, .chosenCount {
+            position: relative;
+            display: block;
+            padding: 0.5*$gap $gap;
+            background: $color-background;
+
+            .zr{
+              align-items: center !important;
+            }
+
+            &:hover{
+              background: darken($color-background, 2.5%);
+            }
+          }
+        }
+      }
+
+      &-closer{
+        display: none;
+        position: absolute;
+        right: $gap;
+        top: $gap;
+        z-index: 99;
+        cursor: pointer;
+
+        &:hover{
+          color: $color-light;
+        }
+      }
+
+      &.loader-active {
+        .zff-stb-loader{
+          display: block !important;
+        }
+      }
+
+      &.content-active{
+        .zff-stb-content{
+          display: block !important;
+        }
+
+        .zff-stb-loader{
+          right: 2.5*$gap;
+        }
+
+        .zff-stb-closer{
+          display: block !important;
+        }
+      }
+    }
+  }
+}
